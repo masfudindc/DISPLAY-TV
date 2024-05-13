@@ -1,0 +1,48 @@
+#header-video {
+  /* Create grid spanning viewport width & height */
+  display: grid;
+  grid-template-rows: 100vh;
+  overflow: hidden;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.video-bg {
+  /* Span the full grid */
+  grid-area: 1 / 1 / -1 / -1;
+
+  /* Re-size video to cover full screen while maintaining aspect ratio */
+  /* min-width: 100%;
+  min-height: 100%; */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+  /* Display video below overlay */
+  z-index: -1;
+}
+
+.video-bg::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-overlay {
+  color: #fff;
+
+  /* Span the full grid */
+  grid-area: 1 / 1 / -1 / -1;
+
+  /* Center Content */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  /* Semi-transparent background */
+  /* background-color: rgba(0, 0, 0, 0.55); */
+  background-color: #c2ecd8b0;
+}
+
+::selection {
+  background-color: #245d43;
+  color: #fff;
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Foody - Organic Food Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0, height=device-height" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+</head>
+
+<style>
+    /* marquee div container */
+    .marquee {
+        font-size: 30px;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        height: 50px;
+        overflow: hidden;
+        background-color: #3cb815;
+        position: relative;
+    }
+
+    /* nested div inside the container */
+    .marquee div {
+        display: block;
+        width: 200%;
+        position: absolute;
+        overflow: hidden;
+        animation: marquee 12s linear infinite;
+    }
+
+    /* span with text */
+    .marquee span {
+        float: left;
+        width: 50%;
+    }
+
+    /* keyframe */
+    @keyframes marquee {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: -100%;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid px-0 fadeIn" data-wow-delay="0.1s">
+        <div class="marquee">
+            <div>
+                <span>WELCOME TO DIREKTORAT LPI SABILILLAH MALANG</span>
+                <!-- you need the second one - otherwise there is a lot of blank space and it will look odd -->
+                <span>WELCOME TO DIREKTORAT LPI SABILILLAH MALANG</span>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- <div height="590" id="first"></div> -->
+
+    <div id="player" class="animate__animated"></div>
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5 animate__animated hs" id="prestasi" hidden>
+        <div class="container hs">
+            <div class="section-header text-center mx-auto mb-5 animate__animated animate__fadeInUp"
+                style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Student Achievement</h1>
+                <p class="">Empowering Excellence: Celebrating Student Achievement</p>
+            </div>
+            <div class="row mt-5 g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="animasi-1 animate__animated animate__fadeInUp animate__faster">
+                        <img class="img-fluid" src="img/smpis (1).jpeg" alt="">
+                    </div>
+                    <div class="animasi-2 animate__animated animate__fadeOutUp animate__faster" hidden>
+                        <img class="img-fluid" src="img/smpis (2).jpeg" alt="">
+                    </div>
+                    <div class="animasi-3 animate__animated animate__fadeOutUp animate__faster" hidden>
+                        <img class="img-fluid" src="img/smpis (4).jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="animasi-1 animate__animated animate__fadeInUp animate__delay-1s animate__faster">
+                        <img class="img-fluid" src="img/smpis (3).jpeg" alt="">
+                    </div>
+                    <div class="animasi-2 animate__animated animate__fadeOutUp animate__delay-1s animate__faster"
+                        hidden>
+                        <img class="img-fluid" src="img/smpis (4).jpeg" alt="">
+                    </div>
+                    <div class="animasi-3 animate__animated animate__fadeOutUp animate__delay-1s animate__faster"
+                        hidden>
+                        <img class="img-fluid" src="img/smpis (9).jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="animasi-1 animate__animated animate__fadeInUp animate__delay-2s animate__faster">
+                        <img class="img-fluid" src="img/smpis (5).jpeg" alt="">
+                    </div>
+                    <div class="animasi-2 animate__animated animate__fadeOutUp animate__delay-2s animate__faster"
+                        hidden>
+                        <img class="img-fluid" src="img/smpis (9).jpeg" alt="">
+                    </div>
+                    <div class="animasi-3 animate__animated animate__fadeOutUp animate__delay-2s animate__faster"
+                        hidden>
+                        <img class="img-fluid" src="img/smpis (2).jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <div class="container-fluid p-0 mb-2 animate__animated animate__zoomIn animate__faster" id="agenda" hidden>
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100 hs" src="img/agenda1.jfif" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animate__animated animate__slideInDown">//
+                                        SISMA's Agenda //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animate__animated animate__slideInDown">
+                                        SISMA Berdzikir dan Berdoa</h1>
+                                    <a href=""
+                                        class="btn btn-primary py-3 px-5 animate__animated animate__slideInDown">Maret
+                                        2024</i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animate__animated animate__zoomIn">
+                                    <img class="img-fluid" src="img/agenda1.jfif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100 hs" src="img/agenda1.jfif" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animate__animated animate__slideInDown">//
+                                        SISMA's Agenda //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animate__animated animate__slideInDown">
+                                        SISMA Berdzikir dan Berdoa</h1>
+                                    <a href=""
+                                        class="btn btn-primary py-3 px-5 animate__animated animate__slideInDown">Maret
+                                        2024</i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animate__animated animate__zoomIn">
+                                    <img class="img-fluid" src="img/agenda1.jfif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-light bg-icon" style="height: 200px; position: fixed; z-index: 1;">
+        <div class="container" style="height: 200px;">
+            <div class="section-header text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px; height: 80px;">
+                <h1 class="display-5" style="font-size: large;">Happy Birthday</h1>
+                <p style="font-size: x-small;">Semoga menjadi umur yang berkah, diberikan kelancaran rezeki, terkabul
+                    semua hajat-hajatnya</p>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s" style="height: 100px;">
+                <div class="testimonial-item position-relative bg-white"
+                    style="height: 100px; padding-left: 2%; padding-top: 4%">
+                    <!-- <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5 small"></i> -->
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 rounded-circle" src="img/muchi-1.jpeg" alt="">
+                        <div class="ms-3">
+                            <h5 class="mb-1" style="font-size: x-large;">MUCHIBATUS SA'ADAH, S.Pd fcgdfzfthdh</h5>
+                            <span class="" style="font-size: small;">Guru Matematika</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item position-relative bg-white"
+                    style="height: 100px; padding-left: 2%; padding-top: 4%">
+                    <!-- <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5 small"></i> -->
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 rounded-circle" src="img/hendro-1.jpeg" alt="">
+                        <div class="ms-3">
+                            <h5 class="mb-1 medium" style="font-size: x-large;">HENDRO KARIONO</h5>
+                            <span class="small" style="font-size: small;">Staf Kebersihan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item position-relative bg-white"
+                    style="height: 100px; padding-left: 2%; padding-top: 4%">
+                    <!-- <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5 small"></i> -->
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 rounded-circle" src="img/leli-1.jpeg" alt="">
+                        <div class="ms-3">
+                            <h5 class="mb-1 medium" style="font-size: x-large;">NUR LAILY FAUZIAH, S.Pd</h5>
+                            <span class="small" style="font-size: small;">Guru Seni Budaya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
+
+<script>
+    $('.owl-nav').hide()
+    // afterVideo()
+    // $('.carousel-control-prev').hide()
+    // $('.carousel-control-next').hide()
+
+    var player; // Variabel untuk menyimpan objek pemutar YouTube
+    var durasi;
+    var loop = 0;
+    var tinggiLayar = window.innerHeight;
+
+    // $('.hs').attr('height', tinggiLayar - 200 - 50);
+
+    $('.hs').attr('style', "height:"+(tinggiLayar - 200 - 50)+"px;");
+
+    console.log(tinggiLayar - 200 - 50);
+
+    function onYouTubeIframeAPIReady() {
+        // Buat objek pemutar YouTube
+        player = new YT.Player('player', {
+            height: tinggiLayar - 200 - 50,
+            width: '100%',
+            videoId: 'NN4jTi23UlY',//'2CKku-AjvI8', // Ganti VIDEO_ID dengan ID video YouTube yang ingin Anda embed
+            playerVars: {
+                autoplay: 1, // Autoplay video
+                mute: 1 // Muted autoplay
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        // Dapatkan informasi video setelah pemutar siap
+        durasi = player.getDuration(); // Mendapatkan durasi video dalam detik
+        // console.log('Durasi video:', duration);
+        // durasi['d'] = duration;
+        // player.playVideo();
+        // console.log(durasi['d']);
+        $('#first').attr('hidden', true);
+    }
+
+
+
+    function onPlayerStateChange(event) {
+        // Tambahkan logika tambahan jika diperlukan
+        if (event.data === YT.PlayerState.ENDED) {
+            console.log('Video ended!');
+            $('#player').addClass('animate__zoomOut');
+            $('#player').attr('hidden', true);
+
+            $('#prestasi').attr('hidden', false);
+
+            if (loop > 0) {
+                $('#prestasi').attr('hidden', false);
+                $('.animasi-1').attr('hidden', false);
+                // setTimeout(() => {
+                //     afterVideo()
+                // }, 3000);
+            } else {
+                afterVideo()
+            }
+
+            // Add your logic here for when the video ends
+        }
+    }
+
+    setInterval(() => {
+
+        // $('#agenda').removeClass('animate__fadeInRight').addClass('animate__zoomOut');
+        // $('#agenda').attr('hidden', true);
+        // $('#player').removeClass('animate__zoomOut').addClass('animate__zoomIn');
+        // $('#player').attr('hidden', false);
+
+        // $('#agenda').removeClass('animate__zoomOut').addClass('animate__fadeInRight');
+
+        // player.seekTo(0); // Seek to the beginning of the video
+        // player.playVideo();
+
+        location.reload();
+
+    }, 300000);
+
+
+    function afterVideo() {
+        let x = 1;
+        let out;
+        let inn;
+
+        setInterval(function () {
+            // if (x < 3) {
+            out = x;
+            inn = x + 1;
+            // }else if (x == 3) {
+            //     out = x;
+            //     inn = 1;
+            // }
+            // if (x < 3) {
+            $('.animasi-' + out).removeClass('animate__fadeInUp').addClass('animate__fadeOutUp');
+            $('.animasi-' + out).attr('hidden', true);
+            $('.animasi-' + inn).removeClass('animate__fadeOutUp').addClass('animate__fadeInUp');
+            $('.animasi-' + inn).attr('hidden', false);
+            x++;
+
+            $('.animasi-' + out).removeClass('animate__fadeOutUp').addClass('animate__fadeInUp');
+            // }
+            // else if (x >= 3) {
+            //     $('#prestasi').attr('hidden', true);
+            //     $('#agenda').attr('hidden', false);
+            //     $('#agenda').addClass('animate__fadeOutUp');
+            // }
+            // console.log('out='+out+' in='+inn);
+
+            // if (x > 3) {
+            //     x = 1;
+            // }
+        }, 3000);
+
+        // setTimeout(() => {
+        //     $('#prestasi').addClass('animate__fadeOutLeft');
+        //     // $('#prestasi').attr('hidden', true);
+        //     // $('#agenda').attr('hidden', false);
+
+        // }, 9500);
+
+        setTimeout(() => {
+            $('#prestasi').addClass('animate__fadeOutLeft');
+            $('#agenda').attr('hidden', false);
+            $('#prestasi').attr('hidden', true);
+
+
+            $('#prestasi').remove('animate__fadeOutLeft').addClass('animate__fadeInUp');
+            // $('#prestasi').addClass('animate__fadeOutLeft');
+
+        }, 9500);
+
+        loop++;
+    }
+
+
+    // console.log('Tinggi layar: ' + tinggiLayar + 'px');
+</script>
