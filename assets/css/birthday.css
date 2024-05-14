@@ -9,7 +9,7 @@ padding-left: 10px;
 .birthday .birthday-item {
 box-sizing: content-box;
 padding: 30px;
-margin: 30px 10px;
+/* margin: 30px 10px; */
 box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
 position: relative;
 background: #fff;
