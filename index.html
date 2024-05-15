@@ -51,7 +51,7 @@
 <body onclick="openFullscreen();">
 
     <!-- section 1 -->
-    <div style="background-color: #14756D; height: 7vh;">
+    <div style="background-color: #ff6600; height: 7vh;">
         <div class="marquee" style="height: 100%;">
             <div class="running-text" style="color: white;">WELCOME TO KAMPUS 2 SEKOLAH ISLAM SABILILLAH MALANG (SISMA)</div>
         </div>
@@ -59,7 +59,7 @@
 
 
     <!-- section 2 -->
-    <div style="background-color: rgb(91, 181, 98); height: 62vh;">
+    <div style="background-color: #ffdca5; height: 62vh;">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
 
@@ -126,11 +126,11 @@
                     
                 <li class="splide__slide">
                     <div class="row">
-                        <div class="col-4 p-3 bg-primary text-white">
+                        <div class="col-4 p-3 text-white">
                             <img src="https://brandontran.com/images/cardboard-castle-10.jpg">
                         </div>
-                        <div class="col-8 p-3 bg-dark text-white">
-                            <div class="d-flex flex-column mb-3">
+                        <div class="col-8 p-3 text-white">
+                            <div class="d-flex flex-column mb-3" style="padding: 2%;">
                                 <div class="p-2 bg-info">
                                     <h1 class="display-4" style="font-size: 3vw;">John Doe Ronaldo Delima Marques</h1>
                                 </div>
@@ -144,11 +144,11 @@
                     
                 <li class="splide__slide">
                     <div class="row">
-                        <div class="col-4 p-3 bg-primary text-white">
+                        <div class="col-4 p-3 text-white">
                             <img src="https://brandontran.com/images/cardboard-castle-10.jpg">
                         </div>
-                        <div class="col-8 p-3 bg-dark text-white">
-                            <div class="d-flex flex-column mb-3">
+                        <div class="col-8 p-3 text-white">
+                            <div class="d-flex flex-column mb-3" style="padding: 2%;">
                                 <div class="p-2 bg-info">
                                     <h1 class="display-4" style="font-size: 3vw;">John Doe Ronaldo Delima Marques</h1>
                                 </div>
@@ -162,11 +162,11 @@
                     
                 <li class="splide__slide">
                     <div class="row">
-                        <div class="col-4 p-3 bg-primary text-white">
+                        <div class="col-4 p-3 text-white">
                             <img src="https://brandontran.com/images/cardboard-castle-10.jpg">
                         </div>
-                        <div class="col-8 p-3 bg-dark text-white">
-                            <div class="d-flex flex-column mb-3">
+                        <div class="col-8 p-3 text-white">
+                            <div class="d-flex flex-column mb-3" style="padding: 2%;">
                                 <div class="p-2 bg-info">
                                     <h1 class="display-4" style="font-size: 3vw;">John Doe Ronaldo Delima Marques</h1>
                                 </div>
@@ -242,6 +242,14 @@
     <!-- yt api -->
     <script src="assets/js/yt.js"></script>
 
+
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.body.style.pointerEvents = 'none';
+    document.body.style.touchAction = 'none';
+}
+
+    </script>
 
 </body>
 </html>

@@ -20,10 +20,12 @@
   /* height: 100%; */
   /* width: 80%; */
   margin: 0 auto;
+  background-color: #ffc26d;
 }
 
 .splide__slide.is-active .row {
   transform: scale(1);
+  background-color: #ff6600;
 }
 
 .splide .splide__arrow {
