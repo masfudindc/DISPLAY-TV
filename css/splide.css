@@ -43,7 +43,7 @@
 }
 
 .splide__slide.is-active .row {
-  transform: scale(1);
+  transform: scale(0.9);
   background-color: #ff6600;
 }
 
