@@ -26,7 +26,7 @@
 .bday-decor--bottom-right {
     position: absolute; 
     right: 20px;
-    bottom: 15px;
+    bottom: 5px;
   }
   
   /* Animations */ 
@@ -54,7 +54,7 @@
 
 
 /* Happy Birthday Image */
-/* .p-img{
+.p-img{
     animation-name: p-img;
     animation-duration: 7.2s;
     animation-iteration-count: infinite;
@@ -62,12 +62,12 @@
 
 @keyframes p-img {
     0%, 100% {
-        transform: rotate(0deg);
-    }
-    50% {
         transform: rotate(3deg);
     }
-} */
+    50% {
+        transform: rotate(8deg);
+    }
+}
 
 
 
