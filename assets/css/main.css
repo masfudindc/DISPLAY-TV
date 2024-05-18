@@ -1,7 +1,27 @@
 :root {
-    --color-lpi: #14756D;
+    --color-main-lpi: #14756D;
+    --color-secondary-lpi: #1bb1a0; 
+    --color-third-lpi: #64e4cf;
+    --color-fourth-lpi: #f1fcfa;
+
     --color-tk: #a329cc;
+    --color-secondary-tk: #bf4aeb;
+    --color-third-tk: #e4adfa;
+    --color-fourth-tk: #fbf4ff;
+
     --color-sd: #99ff00;
+    --color-secondary-sd: #84e600;
+    --color-third-sd: #bfff50;
+    --color-fourth-sd: #f7ffe4;
+
     --color-smp: #ff6600;
+    --color-secondary-smp: #ff7f0a;
+    --color-third-smp: #ffc26d;
+    --color-fourth-smp: #fff8ec;
+
     --color-sma: #788f94;
+    --color-secondary-sma: #5f767b;
+    --color-third-sma: #a6b7ba;
+    --color-fourth-sma: #f4f7f7;
+
   }
