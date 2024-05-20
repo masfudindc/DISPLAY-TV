@@ -4,9 +4,9 @@
 
 - Running text
 
-## Section 2
+## Section 2 (True == height:63 | False == height:93)
 
-- Slider Gambar
+- Slider Prestasi
 - Slider Video format mp4 (upload)
 - Slider Video youtube (embed API)
 - Slider Agenda (Row Teks & Img)
