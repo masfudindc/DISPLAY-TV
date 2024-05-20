@@ -91,16 +91,32 @@
 /* float - End */
 
 .float-emot {
-    animation-name: float;
+    animation-name: float-emot;
     animation-duration: 5.9s;
     animation-iteration-count: infinite;
     }
 
-    @keyframes float {
+    @keyframes float-emot {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(12deg);
+    }
+}
+
+/* 
+.float-teks {
+    animation-name: float-teks;
+    animation-duration: 5.9s;
+    animation-iteration-count: infinite;
+    }
+
+    @keyframes float-teks {
     0%, 100% {
         transform: translateY(0px);
     }
     50% {
         transform: translateY(3vh);
     }
-}
+} */
