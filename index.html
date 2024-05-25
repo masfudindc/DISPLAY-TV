@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/marquee.css">
     <link rel="stylesheet" href="assets/css/video-slide.css">
-    <link rel="stylesheet" href="assets/css/custom-owl-carousel.css">
     <link rel="stylesheet" href="assets/css/birthday.css">
     <link rel="stylesheet" href="css/splide.css">
     <link rel="stylesheet" href="css/main.css">
@@ -21,29 +20,62 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- owl-carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"> 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">  -->
     
     <!-- owl-carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script> -->
 
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Jersey+20' rel='stylesheet'>
 
     <!-- splider -->
-    <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
-    <link href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    " rel="stylesheet">
+    <!-- slick JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">  
+   
+
+
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel-custom.css">
 
     <style>
-    
-    .running-text {
-        font-family: 'Jersey 20';font-size: 5vh;
-    }
+        :root {
+            --color-main-lpi: #14756D;
+            --color-secondary-lpi: #1bb1a0; 
+            --color-third-lpi: #64e4cf;
+            --color-fourth-lpi: #f1fcfa;
+
+            --color-main-tk: #a329cc;
+            --color-secondary-tk: #bf4aeb;
+            --color-third-tk: #e4adfa;
+            --color-fourth-tk: #fbf4ff;
+
+            --color-main-sd: #99ff00;
+            --color-secondary-sd: #84e600;
+            --color-third-sd: #bfff50;
+            --color-fourth-sd: #f7ffe4;
+
+            --color-main-smp: #ff6600;
+            --color-secondary-smp: #ff7f0a;
+            --color-third-smp: #ffc26d;
+            --color-fourth-smp: #fff8ec;
+
+            --color-main-sma: #788f94;
+            --color-secondary-sma: #5f767b;
+            --color-third-sma: #a6b7ba;
+            --color-fourth-sma: #f4f7f7;
+
+            --height-main-section1: 7vh;
+            --height-main-section2-true: 63vh;
+            --height-main-section2-false: 93vh;
+            --height-main-section3: 30vh;
+        }
 
     </style>
 
@@ -52,7 +84,7 @@
 <body onclick="openFullscreen();">
 
     <!-- section 1 -->
-    <div style="background-color: #ff6600; height: 7vh;">
+    <div style="background-color: var(--color-main-smp); height: var(--height-main-section1);">
         <div class="marquee" style="height: 100%;">
             <div class="running-text" style="color: white;">WELCOME TO KAMPUS 2 SEKOLAH ISLAM SABILILLAH MALANG (SISMA)</div>
         </div>
@@ -64,21 +96,107 @@
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
 
-                <div class="carousel-item active" data-bs-interval="10000">
+                <!-- video -->
+                <div class="carousel-item active" data-bs-interval="5000">
                     <div style="height: 63vh;">
                         <img style="height: 100%; object-fit: contain;" src="https://sekolahsabilillah.sch.id/public/img/FotoPage.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
 
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div style="height: 63vh;">
-                        <img style="height: 100%; object-fit: contain;" src="https://sekolahsabilillah.sch.id/public/img/FotoPage.png" class="d-block w-100" alt="...">
+                <!-- prestasi -->
+                <div class="carousel-item" data-bs-interval="30000">
+
+                    <style>                          
+                        .slider-prestasi-thumb .thumb-slide{
+                            opacity: 0.5;
+                            margin-bottom: 2%;
+                        }
+
+                        .slider-prestasi-thumb .thumb-slide.slick-current {
+                            border-color: #12cd76;
+                            opacity: 1;
+                        }
+                    </style>
+
+                    <div class="container-fluid" style="height: var(--height-main-section2-true);">
+                        <div class="row">
+                            <div class="col-9" style="background-color: #14756D; height: var(--height-main-section2-true);">
+                                <div class="slider-prestasi-main">
+                                    <div class="main-slide" style="height: var(--height-main-section2-true);">
+                                        <img src="assets/img/smpis (1).jpeg" alt="Product img" style="width: 100%; height: var(--height-main-section2-true); object-fit: contain;"></div>
+                                    <div class="main-slide" style="height: var(--height-main-section2-true);">
+                                        <img src="assets/img/smpis (2).jpeg" alt="Product img" style="width: 100%; height: var(--height-main-section2-true); object-fit: contain;"></div>
+                                    <div class="main-slide" style="height: var(--height-main-section2-true);">
+                                        <img src="assets/img/smpis (3).jpeg" alt="Product img" style="width: 100%; height: var(--height-main-section2-true); object-fit: contain;"></div>
+                                    <div class="main-slide" style="height: var(--height-main-section2-true);">
+                                        <img src="assets/img/smpis (4).jpeg" alt="Product img" style="width: 100%; height: var(--height-main-section2-true); object-fit: contain;"></div>
+                                    <div class="main-slide" style="height: var(--height-main-section2-true);">
+                                        <img src="assets/img/smpis (5).jpeg" alt="Product img" style="width: 100%; height: var(--height-main-section2-true); object-fit: contain;"></div>
+                                    <div class="main-slide" style="height: var(--height-main-section2-true);">
+                                        <img src="assets/img/smpis (6).jpeg" alt="Product img" style="width: 100%; height: var(--height-main-section2-true); object-fit: contain;"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-3" style="background-color: #1bb1a0; height: var(--height-main-section2-true);">
+                                <div class="slider-prestasi-thumb">
+                                    <div class="thumb-slide">
+                                        <img src="assets/img/smpis (1).jpeg" alt="Thumb img" style="width: 100%;"></div>
+                                    <div class="thumb-slide">
+                                        <img src="assets/img/smpis (2).jpeg" alt="Thumb img" style="width: 100%;"></div>
+                                    <div class="thumb-slide">
+                                        <img src="assets/img/smpis (3).jpeg" alt="Thumb img" style="width: 100%;"></div>
+                                    <div class="thumb-slide">
+                                        <img src="assets/img/smpis (4).jpeg" alt="Thumb img" style="width: 100%;"></div>
+                                    <div class="thumb-slide">
+                                        <img src="assets/img/smpis (5).jpeg" alt="Thumb img" style="width: 100%;"></div>
+                                    <div class="thumb-slide">
+                                        <img src="assets/img/smpis (6).jpeg" alt="Thumb img" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+                    <script>
+                        $('.slider-prestasi-main').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        fade: true,
+                        asNavFor: '.slider-prestasi-thumb'
+                        });
+                        $('.slider-prestasi-thumb').slick({
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        vertical:true,
+                        asNavFor: '.slider-prestasi-main',
+                        dots: false,
+                        arrows: false,
+                        focusOnSelect: true,
+                        verticalSwiping:true,
+                        autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                        }
+                        });
+                    </script>                    
+
                 </div>
 
-                <div class="carousel-item">
-                    <div style="height: 63vh;">
-                        <img style="height: 100%; object-fit: contain;" src="https://sekolahsabilillah.sch.id/public/img/FotoPage.png" class="d-block w-100" alt="...">
+                <!-- agenda -->
+                <div class="carousel-item" style="height: 63vh;" data-bs-interval="30000">    
+                    <div class="container">
+                        <div class="owl-carousel">
+                          <div><img src="https://via.placeholder.com/400x300/f06/fff/?text=1" alt=""></div>
+                          <div><img src="https://via.placeholder.com/400x300/f63/fff/?text=2" alt=""></div>
+                          <div><img src="https://via.placeholder.com/400x300/fc3/fff/?text=3" alt=""></div>
+                          <div><img src="https://via.placeholder.com/400x300/693/fff/?text=4" alt=""></div>
+                          <div><img src="https://via.placeholder.com/400x300/3cc/fff/?text=5" alt=""></div>
+                          <div><img src="https://via.placeholder.com/400x300/369/fff/?text=6" alt=""></div>
+                          <div><img src="https://via.placeholder.com/400x300/936/fff/?text=7" alt=""></div>
+                        </div>
                     </div>
                 </div>
 
@@ -93,24 +211,22 @@
 
                 <div class="carousel-item">
                     <div style="height: 63vh;">
-                        
-                        <div id="player"></div>
-                         
+                        <div id="player"></div>    
                     </div>
                 </div>
 
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            </div>
         </div>
-        
+
     </div>
 
 
@@ -225,13 +341,86 @@
                 // }
                 // }
             }).mount();
+
+            new Splide('#splide-prestasi', {
+                type: 'loop',
+                perPage: 1,
+                focus: 'center',
+                autoplay: true,
+                interval: 2600,
+                // flickMaxPages: 3,
+                updateOnMove: true,
+                pagination: false,
+                padding: '30%',
+                throttle: 300,
+                autoWidth: true,
+                // breakpoints: {
+                // 1440: {
+                //     perPage: 1,
+                //     padding: '30%'
+                // }
+                // }
+
+                // const sections = document.querySelectorAll('section');
+                
+                // const breakpoints = {};
+                
+                // sections.forEach(section => {
+                //   const height = getComputedStyle(section).height;
+                //   const perPage = Math.ceil(parseFloat(height) / window.innerHeight);
+                //   breakpoints[height] = { perPage: perPage, padding: '30%' };
+                // });
+                
+                // const splide = new Splide('#splide', {
+                //   perPage: 1,
+                //   padding: '30%',
+                //   breakpoints: breakpoints
+                // });
+
+            }).mount();
+
+
+            new Splide('#splide-agenda', {
+                type: 'loop',
+                perPage: 1,
+                focus: 'center',
+                autoplay: true,
+                interval: 2600,
+                // flickMaxPages: 3,
+                updateOnMove: true,
+                pagination: false,
+                padding: '30%',
+                throttle: 300,
+                autoWidth: true,
+                // breakpoints: {
+                // 1440: {
+                //     perPage: 1,
+                //     padding: '30%'
+                // }
+                // }
+
+                // const sections = document.querySelectorAll('section');
+                
+                // const breakpoints = {};
+                
+                // sections.forEach(section => {
+                //   const height = getComputedStyle(section).height;
+                //   const perPage = Math.ceil(parseFloat(height) / window.innerHeight);
+                //   breakpoints[height] = { perPage: perPage, padding: '30%' };
+                // });
+                
+                // const splide = new Splide('#splide', {
+                //   perPage: 1,
+                //   padding: '30%',
+                //   breakpoints: breakpoints
+                // });
+
+            }).mount();
+
             });
         </script>
 
     </div>
-
-
-
 
 
     
@@ -261,6 +450,10 @@
     <!-- marquee -->
     <script src="assets/js/marquee.js"></script>
     <script src="jquery.marquee.js?v=3" type="text/javascript"></script>
+
+    <!-- owl-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
 
     <!-- yt api -->
     <script src="assets/js/yt.js"></script>
