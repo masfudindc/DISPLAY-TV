@@ -1,0 +1,139 @@
+/*Owl Animation*/
+.owl-item {
+  overflow: hidden;
+}
+
+.fxSlideBehind .owl-stage, .fxStickIt .owl-stage, .fxLetMeIn .owl-stage, .fxSnapIn .owl-stage, .fxPushReveal .owl-stage {
+  transform: none !important;
+  width: 100% !important;
+  position: relative;
+  height: 0;
+  border: none;
+  overflow: hidden;
+  display: block;
+  padding-top: 31.25%;
+}
+.fxSlideBehind .owl-item, .fxStickIt .owl-item, .fxLetMeIn .owl-item, .fxSnapIn .owl-item, .fxPushReveal .owl-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  opacity: 0;
+  z-index: 10;
+}
+.fxSlideBehind .owl-item.active, .fxStickIt .owl-item.active, .fxLetMeIn .owl-item.active, .fxSnapIn .owl-item.active, .fxPushReveal .owl-item.active {
+  z-index: 20;
+  opacity: 1;
+}
+.fxSlideBehind .owl-item.owl-animated-out, .fxStickIt .owl-item.owl-animated-out, .fxLetMeIn .owl-item.owl-animated-out, .fxSnapIn .owl-item.owl-animated-out, .fxPushReveal .owl-item.owl-animated-out {
+  opacity: 1;
+}
+.fxSlideBehind .owl-item.owl-animated-in, .fxStickIt .owl-item.owl-animated-in, .fxLetMeIn .owl-item.owl-animated-in, .fxSnapIn .owl-item.owl-animated-in, .fxPushReveal .owl-item.owl-animated-in {
+  opacity: 0;
+}
+
+/*****************************************/
+/* Push reveal */
+/*****************************************/
+.fxPushReveal .owl-item.animated {
+  opacity: 1;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.fxPushRevealOutNext {
+  animation-name: slideOutBottom;
+}
+
+.fxPushRevealInNext {
+  animation-name: slideInHalfFromTop;
+}
+.fxPushReveal .fxPushRevealInNext.owl-item {
+  z-index: 5;
+}
+
+.fxPushRevealOutPrev {
+  animation-name: slideOutHalfTop;
+}
+
+.fxPushRevealInPrev {
+  animation-name: slideInFromBottom;
+}
+
+@keyframes slideOutBottom {
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes slideInHalfFromTop {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideOutHalfTop {
+  to {
+    transform: translateY(-50%);
+  }
+}
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+body {
+  font: 16px/1.5 Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: left !important;
+  margin-top: 0;
+  height: 0;
+}
+.owl-nav [class*=owl-] {
+  transform: translateY(-50%);
+  margin: 0 20px !important;
+  padding: 8px 14px !important;
+}
+
+.owl-next {
+  float: right;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.owl-dots .owl-dot span {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.owl-carousel {
+  margin-bottom: 10px;
+  background-color: #333;
+}
+
